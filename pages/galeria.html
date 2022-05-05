@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="../index.html"><img src="../imagenes/logo.png" alt="logo" class="header__logo--imagen"></a>
+        <a href="#menu" class="header__menu"><span class="jam jam-menu"></span></a>
+        <nav class="nav" id="menu">           
+            <ul class="header__lista">
+                <a href="../index.html" class="header__links"><li class="header__items">Inicio</li></a>
+                <a href="./galeria.html" class="header__links"><li class="header__items">Galería</li></a>
+                <a href="./fechas.html" class="header__links"><li class="header__items">Fechas</li></a>
+                <a href="./preguntas-frecuentes.html" class="header__links"><li class="header__items">Preguntas Frecuentes</li></a>
+                <a href="./contacto.html" class="header__links"><li class="header__items">Contacto</li></a>
+                <a class="header__links" href="#"><li class="header__items header__items--close"><span class="jam jam-close"></span></li></a>
+            </ul>           
+        </nav>
+    </header>
+    <main >
+        <h1 class="titulos">Próximos Conciertos</h1>
+        
+        <section class="galeria">
+            <div class="galeria__concierto">
+                <img class="galeria__imagen" src="../imagenes/concierto-1.jpg" alt="concierto 1">
+                <div class="galeria__descripcion">
+                    <h2 class="galeria__descripcion--titulo">Concierto 1</h2>
+                    <p class="galeria__descripcion--subtitulo">Aca iría información sobre el concierto 1</p>
+                </div>
+                <div class="galeria__descripcion">
+                    <h2 class="galeria__descripcion--titulo">Próximas Funciones</h2>
+                    <p class="galeria__descripcion--subtitulo">Aca iría algunas fechas de concierto 1</p>
+                </div>
+                <img class="galeria__imagen" src="../imagenes/concierto-2.jpg" alt="concierto 2">
+                <div class="galeria__descripcion">
+                    <h2 class="galeria__descripcion--titulo">Concierto 2</h2>
+                    <p class="galeria__descripcion--subtitulo">Aca iría información sobre el concierto 2</p>
+                </div>
+                <div class="galeria__descripcion">
+                    <h2 class="galeria__descripcion--titulo">Próximas Funciones</h2>
+                    <p class="galeria__descripcion--subtitulo">Aca iría algunas fechas de concierto 2</p>
+                </div>
+                <img class="galeria__imagen" src="../imagenes/concierto-3.jpg" alt="concierto 3">
+                <div class="galeria__descripcion">
+                    <h2 class="galeria__descripcion--titulo">Concierto 2</h2>
+                    <p class="galeria__descripcion--subtitulo">Aca iría información sobre el concierto 2</p>
+                </div>
+                <div class="galeria__descripcion">
+                    <h2 class="galeria__descripcion--titulo">Próximas Funciones</h2>
+                    <p class="galeria__descripcion--subtitulo">Aca iría algunas fechas de concierto 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__descripcion">
+                <img src="../imagenes/logo.png" alt="logo" id="footer__descripcion--logo">
+                <p class="footer__descripcion--texto">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </div>
+
+            <div class="footer__enlaces">
+                <a href="https://www.instagram.com/" target="_blank" class="footer__enlaces--links"><img class="footer__imagenes" src="../imagenes/instagram.png" alt="instagram" ></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="footer__enlaces--links"><img class="footer__imagenes" src="../imagenes/twitter.png" alt="twitter" ></a>
+                <a href="https://www.facebook.com/" target="_blank" class="footer__enlaces--links"><img class="footer__imagenes" src="../imagenes/facebook.png" alt="facebook" ></a>
+            </div>
+        </div>
+       
+        <p id="footer__derechos">Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
