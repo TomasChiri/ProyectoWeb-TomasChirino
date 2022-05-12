@@ -9,41 +9,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header">     
         <a class="header__logo" href="../index.html"><img src="../imagenes/logo.png" alt="logo" class="header__logo--imagen"></a>
         <a href="#menu" class="header__menu"><span class="jam jam-menu"></span></a>
-        <nav class="nav" id="menu">           
-            <ul class="header__lista">
-                <a href="../index.html" class="header__links"><li class="header__items">Inicio</li></a>
-                <a href="./galeria.html" class="header__links"><li class="header__items">Galería</li></a>
-                <a href="./fechas.html" class="header__links"><li class="header__items">Fechas</li></a>
-                <a href="./preguntas-frecuentes.html" class="header__links"><li class="header__items">Preguntas Frecuentes</li></a>
-                <a href="./contacto.html" class="header__links"><li class="header__items">Contacto</li></a>
-                <a class="header__links" href="#"><li class="header__items header__items--close"><span class="jam jam-close"></span></li></a>
-            </ul>           
+        <nav class="nav navbar navbar-expand-lg navbar-dark" id="menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler boton__menu" type="button" data-bs-toggle="collapse"                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">     
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">         
+                    <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
+                        <a href="../index.html" class="header__links"><li class="header__items nav-item">Inicio</li></a>
+                        <a href="./galeria.html" class="header__links"><li class="header__items nav-item">Conciertos</li></a>
+                        <a href="./fechas.html" class="header__links"><li class="header__items nav-item">Fechas</li></a>
+                        <a href="./preguntas-frecuentes.html" class="header__links"><li class="header__items nav-item">Preguntas Frecuentes</li></a>
+                        <a href="./contacto.html" class="header__links"><li class="header__items nav-item">Contacto</li></a>
+                        <a class="header__links" href="#"><li class="header__items header__items--close"><span class="jam jam-close"></span></li></a>
+                    </ul>
+                </div>
+            </div>            
         </nav>
     </header>
     <main>
         <h1 class="titulos">Dejanos tu consulta</h1>
 
         <section class="contacto">
+            
             <form class="contacto__form" action="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input class="contacto__input" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div>
-                    <label for="correo">Email:</label>
-                    <input type="email" class="contacto__input" name="correo" id="correo" placeholder="Ingrese su email">
-                </div>
-                <div>
-                    <label for="consulta">Consulta:</label>
-                    <textarea name="consulta" class="consulta__texto" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
-                </div>
-                <button class="consulta__boton">Enviar</button>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control contacto__input" id="formGroupExampleInput" placeholder="Ingrese su nombre completo">
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <input type="email" class="form-control contacto__input" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba aqui su consulta..."></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary btn-lg consulta__boton">Enviar</button>
+                  </div>
             </form>
         </section>
     </main>
@@ -63,5 +75,7 @@
        
         <p id="footer__derechos">Todos los derechos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 .header{
     background-color: rgba(0, 0, 0, 0.922);
     display: flex;
@@ -12,6 +17,7 @@
     align-items: center;
     padding: 0.5rem;
 }
+
 
 .header__logo{
     margin-left: 1rem;
@@ -48,6 +54,7 @@
 
 .header__items:hover{
     background-color: orange;
+    color: white;
 }
 
 .header__links{
@@ -86,8 +93,40 @@
     padding: 0 1rem 0;
 }
 
+.promociones{
+    background-color: rgba(25, 25, 25, 1);
+    padding: 2rem;
+    min-height: 500px;
+}
+
+.promociones__titulo{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.promociones__carta{
+    max-width: 18rem;
+    min-height: 460px;
+    background-color: rgba(38, 36, 36, 0.9);
+    padding: 0.5rem;
+    color: white;
+    text-align: justify;
+}
+
+.promociones__imagenes{
+    height: 15rem;
+}
+
+.carta__titulo{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
 .socios{
-    background-color: rgba(12, 12, 12, 1);
+    background-color: rgba(25, 25, 25, 1);
     color: white;
     max-height: 500px;
     padding-bottom: 2rem;
@@ -165,6 +204,7 @@
     padding-top: 1rem;
     color: white;
     background-color: rgb(239, 64, 11);
+    margin-bottom: 0;
 }
 
 .galeria{
@@ -241,17 +281,24 @@
 }
 
 .preguntas__principal{
+    min-width: 600px;
     color: white;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .preguntas__principal h2{
-    font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
 }
 
+.boton__preguntas{
+    font-size: 3rem;
+    background-color: transparent;
+    color: white;
+}
+
 .preguntas__principal p{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .contacto{
@@ -281,20 +328,20 @@
     background-color: rgba(0, 0, 0, 0.6);
     font-family: 'Bebas Neue', cursive;
     padding: 3rem;
+    min-width: 50%;
 }
 
 .contacto__input{
-    width: 250px;
+    width: 100%;
     height: 30px;
     margin-bottom: 1rem;
 }
 
 .consulta__boton{
-    width: 100px;
-    height: 40px;
-    background-color: rgba(10, 14, 82, 0.774);
-    margin-left: 40%;
+    /* background-color: rgba(10, 14, 82, 0.774); */
+    /* margin: 0 auto; */
     color: white;
+    font-size: 2rem;
 }
 
 .consulta__boton:hover{
@@ -362,11 +409,16 @@ footer p{
 @media screen and (max-width: 1023px)
 {
     .header{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .header__items{
         font-size: 1.5rem;
+    }
+
+    .boton__menu{
+        text-align: end;
     }
 
     .main__index{
@@ -383,6 +435,22 @@ footer p{
 
     #main__texto--subtitulo{
         font-size: 2.5rem;
+    }
+
+    .promociones__titulo{
+        font-size: 2rem;
+    }
+
+    .promociones__carta{
+        min-height: 500px;
+    }
+
+    .carta__titulo{
+        font-size: 1.5rem;
+    }
+
+    .carta__parrafo{
+        font-size: 15px;
     }
 
     .socios__flex{
@@ -435,7 +503,11 @@ footer p{
     }
 
     .contacto{
-        height: 600px;
+        height: 700px;
+    }
+
+    .contacto__form{
+        margin: 1rem;
     }
 
     .footer__descripcion--texto{
@@ -454,16 +526,16 @@ footer p{
         justify-content: space-between;
     }
 
-    nav{
+    /* nav{
         display: none;
-    }
+    } */
     
-    .header__menu{
+    /* .header__menu{
         display: block;
         font-size: 50px;
         text-decoration: none;
         color: white;
-    }
+    } */
     
     .header__lista{
         flex-direction: column;
@@ -478,10 +550,10 @@ footer p{
     }
 
     .header__items{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
-    .header__items--close{
+    /* .header__items--close{
         display: block;
     }
 
@@ -499,7 +571,7 @@ footer p{
 
     #menu:target{
         right: 0;
-    }
+    }  */
 
     .main__index{
         height: 600px;
@@ -515,6 +587,11 @@ footer p{
 
     #main__texto--subtitulo{
         font-size: 2rem;
+    }
+
+    .promociones__carta{
+        margin-bottom: 1rem;
+        /* height: 10px; */
     }
 
     .titulos{
@@ -537,7 +614,7 @@ footer p{
     }
 
     .fechas__tabla{
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .preguntas__principal h2{
@@ -548,15 +625,24 @@ footer p{
         font-size: 1.2rem;
     }
 
+    .preguntas__principal{
+        min-width: 50%;
+    }
+
+    .boton__preguntas{
+        font-size: 2.5rem;
+    }
+
     .contacto__form{
         max-width: 75%;
         margin: 0 auto;
-        font-size: 2rem;
+        padding: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .contacto__input{
-        width: 90%;
+        width: 100%;
     }
 
     .consulta__texto{
@@ -565,11 +651,9 @@ footer p{
     }
 
     .consulta__boton{
-        width: 100px;
-        height: 40px;
         margin: 0;
+        font-size: 1.5rem;
     }
-    
 
     #footer__descripcion--logo{
         height: 40px;
@@ -584,4 +668,7 @@ footer p{
         margin-right: 1rem;
     }
 
+    #footer__derechos{
+        min-width: 100%;
+    }
 }
