@@ -19,6 +19,7 @@
         <a href="#menu" class="header__menu"><span class="jam jam-menu"></span></a>
         <nav class="nav navbar navbar-expand-lg navbar-dark" id="menu">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler boton__menu" type="button" data-bs-toggle="collapse"                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">     
                     <span class="navbar-toggler-icon"></span>
                 </button> 
@@ -39,37 +40,7 @@
         <h1 class="titulos">Fechas</h1>
 
         <section class="fechas">
-            <!-- <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table> -->
-
-            <table border="1" class="fechas__tabla table table-dark table-hover table-bordered">
+            <table class="fechas__tabla table table-dark table-hover table-bordered">
                 <thead>
                     <tr>
                       <th scope="col">Nombre</th>
@@ -89,7 +60,7 @@
                         <td>Concierto 2</td>
                         <td>Gran Rex</td>
                         <td>18/06/2022</td>
-                        <td>Agotado</td>
+                        <td>Ultimas Entradas</td>
                     </tr>
                     <tr>
                         <td>Concierto 3</td>
@@ -101,12 +72,36 @@
             </table>
         </section>
 
+        <section class="compra">
+            <div class="compra__concierto">
+                <h2 class="compra__titulo">Compra tu entrada aca</h2>
+                <ul class="compra__lista">
+                    <li class="compra__item">Domingo 22 de Mayo 20:30hs</li>
+                    <li class="compra__item">Concierto 1</li>
+                    <li class="compra__item">$2500</li>
+                    <li class="compra__item"><button type="button" class="btn btn-outline-danger btn-lg">Agotado</button></li>
+                </ul>
+                <ul class="compra__lista">
+                    <li class="compra__item">Sabado 18 de Junio 18:30hs</li>
+                    <li class="compra__item">Concierto 2</li>
+                    <li class="compra__item">$4000</li>
+                    <li class="compra__item"><button type="button" class="btn btn-outline-warning btn-lg">Ultimas</button></li>
+                </ul>
+                <ul class="compra__lista">
+                    <li class="compra__item">Domingo 14 de Agosto 20hs</li>
+                    <li class="compra__item">Concierto 3</li>
+                    <li class="compra__item">$3500</li>
+                    <li class="compra__item"><button type="button" class="btn btn-outline-success btn-lg">Disponible</button></li>
+                </ul>
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__descripcion">
                 <img src="../imagenes/logo.png" alt="logo" id="footer__descripcion--logo">
-                <p class="footer__descripcion--texto">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="footer__descripcion--texto">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
             <div class="footer__enlaces">
