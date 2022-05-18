@@ -1,0 +1,35 @@
+.compra{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 500px;
+    
+    &__concierto{
+        font-family: $font;
+        color: $blanco;
+    }
+    
+    &__titulo{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4rem;
+    }
+    
+    &__lista{
+        background-color: rgba(74, 70, 70, 0.9);
+        max-width: 80%;
+        margin: 0 auto 1rem;
+        padding: 1rem;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    
+    &__item{
+        font-size: 2.5rem;
+        padding-left: 1rem;
+        border-left: 1px solid black;
+        max-width: auto;
+    }
+}
+
+
+

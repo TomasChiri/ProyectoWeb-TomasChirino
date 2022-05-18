@@ -1,802 +1,695 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul{
-    margin-bottom: 0;
-    padding-left: 0;
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-.header{
-    background-color: rgba(0, 0, 0, 0.922);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0.5rem;
+.titulos {
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+  background-color: #ef400b;
+  margin-bottom: 0;
 }
 
-
-.header__logo{
-    margin-left: 1rem;
+.header {
+  background-color: rgba(0, 0, 0, 0.922);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-.header__logo--imagen{
-    height: 75px;
-    width: 75px;
+.header__logo {
+  margin-left: 1rem;
 }
 
-.header__menu{
-    display: none;
+.header__logo--imagen {
+  height: 75px;
+  width: 75px;
 }
 
-.header__lista{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 1rem;
+.header__menu {
+  display: none;
 }
 
-.header__items{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    text-align: center;
-    padding: 25px 30px 25px;
-    list-style-type: none;
+.header__lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 1rem;
 }
 
-.header__items--close{
-    display: none;
+.header__items {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: 25px 30px 25px;
+  list-style-type: none;
 }
 
-.header__items:hover{
-    background-color: orange;
-    color: white;
+.header__items--close {
+  display: none;
 }
 
-.header__links{
-    text-decoration: none;
-    color: white;
+.header__items:hover {
+  background-color: orange;
+  color: white;
 }
 
-.main__index{
-    background-image: url(../imagenes/fondo.jpg);
-    height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.header__links {
+  text-decoration: none;
+  color: white;
 }
 
-.main__texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    padding-top: 260px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
+.main {
+  background-image: url(../imagenes/fondo.jpg);
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#main__texto--titulo{
-    font-size: 7rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 0 1rem 0;
+.main__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding-top: 260px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
 }
 
-#main__texto--subtitulo{
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 0 1rem 0;
+.main__texto--titulo {
+  font-size: 7rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 1rem 0;
 }
 
-.promociones{
-    background-color: rgba(25, 25, 25, 1);
-    padding: 2rem;
-    min-height: 500px;
+.main__texto--subtitulo {
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 1rem 0;
 }
 
-.promociones__titulo{
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 1rem;
+.promociones {
+  background-color: #191919;
+  padding: 2rem;
+  min-height: 500px;
 }
 
-.promociones__carta{
-    max-width: 18rem;
-    min-height: 460px;
-    background-color: rgba(38, 36, 36, 0.9);
-    padding: 0.5rem;
-    color: white;
-    text-align: justify;
+.promociones__titulo {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 1rem;
 }
 
-.promociones__carta--animacion{
-    max-width: 18rem;
-    min-height: 460px;
+.promociones__carta {
+  max-width: 18rem;
+  min-height: 460px;
+  background-color: rgba(38, 36, 36, 0.9);
+  padding: 0.5rem;
+  color: white;
+  text-align: justify;
 }
 
-.promociones__carta--animacion:hover{
-    background-color: rgba(74, 70, 70, 0.9);
-    transform: scale(1.1); 
-    border-radius: 15px;
-    transition: all 2s;
+.promociones__carta--animacion {
+  max-width: 18rem;
+  min-height: 460px;
 }
 
-.promociones__imagenes{
-    height: 15rem;
+.promociones__carta--animacion:hover {
+  background-color: rgba(74, 70, 70, 0.9);
+  transform: scale(1.1);
+  border-radius: 15px;
+  transition: all 2s;
 }
 
-.carta__titulo{
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
+.promociones__imagenes {
+  height: 15rem;
 }
 
-.socios{
-    background-color: rgba(25, 25, 25, 1);
-    color: white;
-    max-height: 500px;
-    padding-bottom: 2rem;
+.carta__titulo {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
 }
 
-.socios__contenedor{
-    max-width: 1000px;
-    margin: 0 auto;
+.socios {
+  background-color: #191919;
+  color: white;
+  max-height: 500px;
+  padding-bottom: 2rem;
 }
 
-.socios__titulo{
-    font-size: 3rem;
-    font-family: 'Bebas Neue', cursive;
-    padding: 2rem;
+.socios__contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
 }
-
-.socios__flex{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    overflow: auto;
 
-    scrollbar-color: #2941AA;
-    scrollbar-width: none;
+.socios__titulo {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  padding: 2rem;
 }
 
-.socios__flex::-webkit-scrollbar-track{
-    background-color: transparent;
+.socios__flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: auto;
+  scrollbar-color: #2941AA;
+  scrollbar-width: none;
 }
 
-.socios__flex::-webkit-scrollbar-thumb{
-    background-color: #2941AA;
+.socios__flex::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-.socios__flex::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
+.socios__flex::-webkit-scrollbar-thumb {
+  background-color: #2941AA;
 }
 
-.socios__items{
-    background-color: rgba(30, 30, 30, 0.9);
-    border-radius: 12px;
-    width: 80%;
-    height: 150px;
-    max-width: 400px;
-    padding: 2rem;
-    flex-shrink: 0;
+.socios__flex::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.socios__imagen{
-    height: 100px;
-    width: 300px;
+.socios__items {
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 12px;
+  width: 80%;
+  height: 150px;
+  max-width: 400px;
+  padding: 2rem;
+  flex-shrink: 0;
 }
 
-.socios__relative{
-    position: relative;
+.socios__imagen {
+  height: 100px;
+  width: 300px;
 }
 
-.socios__flecha{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    background-color: rgb(181, 181, 181);
-    color: #000;
-    padding: 1rem;
-    border-radius: 50%;
-    transform: translateY(-50%) translateX(50%);
-    cursor: pointer;
+.socios__relative {
+  position: relative;
 }
 
-.titulos{
-    font-size: 4rem;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    padding-top: 1rem;
-    color: white;
-    background-color: rgb(239, 64, 11);
-    margin-bottom: 0;
+.socios__flecha {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #b5b5b5;
+  color: #000;
+  padding: 1rem;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(50%);
+  cursor: pointer;
 }
 
-.galeria{
-    background-image: url(../imagenes/fondo-2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 1rem;
+.galeria {
+  background-image: url(../imagenes/fondo-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 1rem;
 }
-
-
-.galeria__concierto{
-    color: white;
-    padding: 1rem;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    /* align-items: center; */
+.galeria__concierto {
+  color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* align-items: center; */
 }
 
-.galeria__imagen{
-    height: 300px;
-    width: 95%;
-    margin: 1rem;
-    border: 2px solid rgb(239, 64, 11);
-    border-radius: 12px;
+.galeria__imagen {
+  height: 300px;
+  width: 95%;
+  margin: 1rem;
+  border: 2px solid #ef400b;
+  border-radius: 12px;
 }
 
-.galeria__descripcion{
-    padding: 1rem;
-    font-family: 'Bebas Neue', cursive;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 1rem;
-    border-radius: 10px;
+.galeria__descripcion {
+  padding: 1rem;
+  font-family: "Bebas Neue", cursive;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 1rem;
+  border-radius: 10px;
 }
 
-.galeria__descripcion--titulo{
-    font-size: 2rem;
+.galeria__descripcion--titulo {
+  font-size: 2rem;
 }
 
-.galeria__descripcion--subtitulo{
-    font-size: 1rem;
+.galeria__descripcion--subtitulo {
+  font-size: 1rem;
 }
 
-
-.fechas{
-    height: 700px;
-    background: url(../imagenes/concierto-2.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding-top: 5rem;
+.fechas {
+  height: 700px;
+  background: url(../imagenes/concierto-2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
 }
 
-.fechas__tabla{
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    border: solid 2px orange;
-    width: 50%;
-    height: 400px;
-    font-size: 2rem;
-    text-align: center;  
-    margin-left: 25%;
+.fechas__tabla {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  border: solid 2px orange;
+  width: 50%;
+  height: 400px;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 25%;
 }
 
-.compra{
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 500px;
+.compra {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 500px;
 }
 
-.compra__concierto{
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+.compra__concierto {
+  font-family: "Bebas Neue", cursive;
+  color: white;
 }
 
-.compra__titulo{
-    text-align: center;
-    padding: 1rem;
-    font-size: 4rem;
+.compra__titulo {
+  text-align: center;
+  padding: 1rem;
+  font-size: 4rem;
 }
 
-.compra__lista{
-    background-color: rgba(74, 70, 70, 0.9);
-    max-width: 80%;
-    margin: 0 auto 1rem;
-    padding: 1rem;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
+.compra__lista {
+  background-color: rgba(74, 70, 70, 0.9);
+  max-width: 80%;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
-.compra__item{
-    font-size: 2.5rem;
-    padding-left: 1rem;
-    border-left: 1px solid black;
-    max-width: auto;
+.compra__item {
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid black;
+  max-width: auto;
 }
-
-.preguntas__main{
-    height: 750px;
-    background-image: url(../imagenes/concierto-3.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.preguntas {
+  height: 750px;
+  background-image: url(../imagenes/concierto-3.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.preguntas__principal{
-    min-width: 600px;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+.preguntas__principal {
+  min-width: 600px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.preguntas__principal h2{
-    font-family: 'Bebas Neue', cursive;
+.preguntas__principal h2 {
+  font-family: "Bebas Neue", cursive;
 }
 
-.boton__preguntas{
-    font-size: 3rem;
-    background-color: transparent;
-    color: white;
+.preguntas__principal p {
+  font-size: 2rem;
 }
 
-.preguntas__principal p{
-    font-size: 2rem;
+.preguntas__boton {
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
 }
 
-.contacto{
-    padding: 2rem;
-    background-image: url(../imagenes/concierto-1.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
+.contacto {
+  padding: 2rem;
+  background-image: url(../imagenes/concierto-1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
-.contacto__titulo{
-    font-size: 4rem;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    padding-top: 1rem;
-    color: white;
+.contacto__titulo {
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
 }
 
-.contacto__form{
-    color: white;
-    font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-family: 'Bebas Neue', cursive;
-    padding: 3rem;
-    min-width: 50%;
+.contacto__form {
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Bebas Neue", cursive;
+  padding: 3rem;
+  min-width: 50%;
 }
 
-.contacto__mapa{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1rem;
-    height: 100%;
-    
+.contacto__mapa {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  height: 100%;
 }
 
-.contacto__mapa--titulo{
-    font-size: 3rem;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+.contacto__mapa--titulo {
+  font-size: 3rem;
+  font-family: "Bebas Neue", cursive;
+  color: white;
 }
 
-.contacto__mapa--iframe{
-    padding: 1rem;
+.contacto__mapa--iframe {
+  padding: 1rem;
 }
 
-.contacto__input{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 1rem;
+.contacto__input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 1rem;
 }
 
-.consulta__boton{
-    /* background-color: rgba(10, 14, 82, 0.774); */
-    /* margin: 0 auto; */
-    color: white;
-    font-size: 2rem;
+.contacto__boton {
+  /* background-color: rgba(10, 14, 82, 0.774); */
+  /* margin: 0 auto; */
+  color: white;
+  font-size: 2rem;
 }
 
-.consulta__boton:hover{
-    background-color: darkorange;
+.contacto__boton:hover {
+  background-color: darkorange;
 }
 
-.footer{
-    height: 120px;
-    background-color: rgba(38, 36, 36, 0.9);
-    position: relative;
+.footer {
+  height: 120px;
+  background-color: rgba(38, 36, 36, 0.9);
+  position: relative;
 }
 
-.footer__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer__descripcion{
-    display: flex;
-   margin: 1rem;
+.footer__descripcion {
+  display: flex;
+  margin: 1rem;
 }
 
-#footer__descripcion--logo{
-    height: 60px;
-    width: 60px;
-    margin-right: 1rem;
+.footer__descripcion--logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 1rem;
 }
 
-footer p{
-    color: rgba(255, 255, 255, 0.8);
+.footer__descripcion--texto {
+  text-align: justify;
+  width: 25rem;
 }
 
-.footer__descripcion--texto{    
-    text-align: justify;
-    width: 25rem;
+.footer p {
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.footer__enlaces--links{
-    margin-right: 5rem;
+.footer__enlaces {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-end;
 }
 
-.footer__enlaces{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: flex-end;
+.footer__enlaces--links {
+  margin-right: 5rem;
 }
 
-.footer__imagenes{
-    height: 50px;
-    margin-top: 1rem;
+.footer__imagenes {
+  height: 50px;
+  margin-top: 1rem;
 }
-
-#footer__derechos{
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
 
-    transform: translate(-50%, -50%);
+.footer__derechos {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*Media Query - Tablet*/
-@media screen and (max-width: 1023px)
-{
-    .header{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .header__items{
-        font-size: 1.5rem;
-    }
-
-    .boton__menu{
-        text-align: end;
-    }
-
-    .main__index{
-        height: 700px;
-    }
-
-    .main__texto{
-        padding-top: 200px;
-    }
-
-    #main__texto--titulo{
-        font-size: 5rem;
-    }
-
-    #main__texto--subtitulo{
-        font-size: 2.5rem;
-    }
-
-    .promociones__titulo{
-        font-size: 2rem;
-    }
-
-    .promociones__carta{
-        min-height: 500px;
-    }
-
-    .carta__titulo{
-        font-size: 1.5rem;
-    }
-
-    .carta__parrafo{
-        font-size: 15px;
-    }
-
-    .socios__flex{
-        padding: 0 1rem 0;
-    }
-
-    .socios__titulo{
-        font-size: 2rem;
-    }
-
-    .socios__items{
-        width: 300px;
-        height: 100px;
-        padding: 1rem;
-    }
-
-    .socios__flecha{
-        top: unset;
-        bottom: 0;
-        transform: translateX(-25%);
-    }
-
-    .socios__imagen{
-        height: 80px;
-        width: 200px;
-    }
-
-    .galeria__imagen{
-        height: 200px;
-        width: 250px;
-        margin: 1rem auto;
-    }
-
-    .galeria__descripcion{
-        margin: 1rem;
-    }
-
-    .galeria__descripcion--titulo{
-        font-size: 1.5rem;
-    }
-
-    .galeria__descripcion--subtitulo{
-        font-size: 1rem;
-    }
-
-    .fechas__tabla{
-        font-size: 1.5rem;
-        min-width: 75%;
-        margin: 0 auto;
-    }
-
-    .compra__titulo{
-        font-size: 3rem;
-    }
-    
-    .compra__lista{
-        max-width: 80%;
-        padding: 0.7rem;
-    }
-    
-    .compra__item{
-        font-size: 1.5rem;
-        padding-right: 1rem;
-    }
-
-    .preguntas__main{
-        height: 650px;
-    }
-
-    .contacto{
-        height: auto;
-    }
-
-    .contacto__form{
-        margin: 1rem;
-    }
-
-    .contacto__mapa{
-        margin: 1rem;
-        padding: 2rem;
-        height: auto;
-    }
-
-    .contacto__mapa--titulo{
-        font-size: 2rem;
-    }
-
-    .contacto__mapa--iframe{
-        height: 350px;
-    }
-
-    .footer__descripcion--texto{
-        display: none;
-    }
-
-    .footer__enlaces--links{
-        margin-right: 3rem;
-    }
+@media screen and (max-width: 1023px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__items {
+    font-size: 1.5rem;
+  }
+  .boton__menu {
+    text-align: end;
+  }
+  .main {
+    height: 700px;
+  }
+  .main__texto {
+    padding-top: 200px;
+  }
+  .main__texto--titulo {
+    font-size: 5rem;
+  }
+  .main__texto--subtitulo {
+    font-size: 2.5rem;
+  }
+  .promociones__titulo {
+    font-size: 2rem;
+  }
+  .promociones__carta {
+    min-height: 500px;
+  }
+  .carta__titulo {
+    font-size: 1.5rem;
+  }
+  .carta__parrafo {
+    font-size: 15px;
+  }
+  .socios__flex {
+    padding: 0 1rem 0;
+  }
+  .socios__titulo {
+    font-size: 2rem;
+  }
+  .socios__items {
+    width: 300px;
+    height: 100px;
+    padding: 1rem;
+  }
+  .socios__flecha {
+    top: unset;
+    bottom: 0;
+    transform: translateX(-25%);
+  }
+  .socios__imagen {
+    height: 80px;
+    width: 200px;
+  }
+  .galeria__imagen {
+    height: 200px;
+    width: 250px;
+    margin: 1rem auto;
+  }
+  .galeria__descripcion {
+    margin: 1rem;
+  }
+  .galeria__descripcion--titulo {
+    font-size: 1.5rem;
+  }
+  .galeria__descripcion--subtitulo {
+    font-size: 1rem;
+  }
+  .fechas__tabla {
+    font-size: 1.5rem;
+    min-width: 75%;
+    margin: 0 auto;
+  }
+  .compra__titulo {
+    font-size: 3rem;
+  }
+  .compra__lista {
+    max-width: 80%;
+    padding: 0.7rem;
+  }
+  .compra__item {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+  .preguntas {
+    height: 650px;
+  }
+  .contacto {
+    height: auto;
+  }
+  .contacto__form {
+    margin: 1rem;
+  }
+  .contacto__mapa {
+    margin: 1rem;
+    padding: 2rem;
+    height: auto;
+  }
+  .contacto__mapa--titulo {
+    font-size: 2rem;
+  }
+  .contacto__mapa--iframe {
+    height: 350px;
+  }
+  .footer__descripcion--texto {
+    display: none;
+  }
+  .footer__enlaces--links {
+    margin-right: 3rem;
+  }
 }
 
 /*Media Query - Mobile*/
-@media screen and (max-width: 600px){
-    .header{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* nav{
-        display: none;
-    } */
-    
-    /* .header__menu{
-        display: block;
-        font-size: 50px;
-        text-decoration: none;
-        color: white;
-    } */
-    
-    .header__lista{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 4rem;
-    }
-
-    .header__logo--imagen{
-        height: 60px;
-        width: 60px;
-    }
-
-    .header__items{
-        font-size: 1.5rem;
-    }
-
-    /* .header__items--close{
-        display: block;
-    }
-
-    #menu{
-        display: block;
-        background-color: rgba(10, 10, 10, 0.9);
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        transition: right 1s;
-    }
-
-    #menu:target{
-        right: 0;
-    }  */
-
-    .main__index{
-        height: 600px;
-    }
-
-    .main__texto{
-        padding-top: 150px;
-    }
-
-    #main__texto--titulo{
-        font-size: 4rem;
-    }
-
-    #main__texto--subtitulo{
-        font-size: 2rem;
-    }
-
-    .promociones__carta{
-        margin-bottom: 1rem;
-        /* height: 10px; */
-    }
-
-    .titulos{
-        font-size: 2.5rem;
-        padding: 1rem;
-    }
-
-    .galeria__concierto{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        text-align: center;
-    }
-
-    .galeria__descripcion{
-        margin: 1rem;
-    }
-
-    .fechas{
-        height: 600px;
-    }
-
-    .fechas__tabla{
-        font-size: 1rem;
-    }
-
-    .compra{
-        height: 600px;
-    }
-
-    .compra__titulo{
-          font-size: 1.5rem;  
-    }
-    
-    .compra__lista{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .compra__item{
-        border-left: 0;
-        font-size: 1.2rem;
-    }
-
-    .preguntas__principal h2{
-        font-size: 1.5rem;
-    }
-    
-    .preguntas__principal p{
-        font-size: 1.2rem;
-    }
-
-    .preguntas__principal{
-        min-width: 50%;
-    }
-
-    .boton__preguntas{
-        font-size: 2.5rem;
-    }
-
-    .contacto__form{
-        max-width: 75%;
-        margin: 0 auto;
-        padding: 2rem;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .contacto__mapa{
-        max-width: 75%;
-        margin: 1rem auto;
-        padding: 1rem;
-    }
-
-    .contacto__mapa--titulo{
-        font-size: 1.5rem;
-    }
-
-    .contacto__mapa--iframe{
-        height: 300px;
-    }
-
-    .contacto__input{
-        width: 100%;
-    }
-
-    .consulta__texto{
-        width: 150px;
-        height: 50px;
-    }
-
-    .consulta__boton{
-        margin: 0;
-        font-size: 1.5rem;
-    }
-
-    #footer__descripcion--logo{
-        height: 40px;
-        width: 40px;
-    }
-
-    .footer__imagenes{
-        height: 30px;
-    }
-
-    .footer__enlaces--links{
-        margin-right: 1rem;
-    }
-
-    #footer__derechos{
-        min-width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__lista {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  .header__logo--imagen {
+    height: 60px;
+    width: 60px;
+  }
+  .header__items {
+    font-size: 1.5rem;
+  }
+  .main {
+    height: 600px;
+  }
+  .main__texto {
+    padding-top: 150px;
+  }
+  .main__texto--titulo {
+    font-size: 4rem;
+  }
+  .main__texto--subtitulo {
+    font-size: 2rem;
+  }
+  .promociones__carta {
+    margin-bottom: 1rem;
+    /* height: 10px; */
+  }
+  .titulos {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .galeria__concierto {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    text-align: center;
+  }
+  .galeria__descripcion {
+    margin: 1rem;
+  }
+  .fechas {
+    height: 600px;
+  }
+  .fechas__tabla {
+    font-size: 1rem;
+  }
+  .compra {
+    height: 600px;
+  }
+  .compra__titulo {
+    font-size: 1.5rem;
+  }
+  .compra__lista {
+    flex-direction: column;
+    align-items: center;
+  }
+  .compra__item {
+    border-left: 0;
+    font-size: 1.2rem;
+  }
+  .preguntas__principal h2 {
+    font-size: 1.5rem;
+  }
+  .preguntas__principal p {
+    font-size: 1.2rem;
+  }
+  .preguntas__principal {
+    min-width: 50%;
+  }
+  .preguntas__boton {
+    font-size: 2.5rem;
+  }
+  .contacto__form {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contacto__mapa {
+    max-width: 75%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .contacto__mapa--titulo {
+    font-size: 1.5rem;
+  }
+  .contacto__mapa--iframe {
+    height: 300px;
+  }
+  .contacto__input {
+    width: 100%;
+  }
+  .contacto__boton {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .footer__descripcion--logo {
+    height: 40px;
+    width: 40px;
+  }
+  .footer__imagenes {
+    height: 30px;
+  }
+  .footer__enlaces--links {
+    margin-right: 1rem;
+  }
+  .footer__derechos {
+    min-width: 100%;
+  }
 }
+/*# sourceMappingURL=estilos.css.map */

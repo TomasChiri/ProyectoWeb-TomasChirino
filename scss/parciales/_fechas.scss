@@ -1,0 +1,18 @@
+.fechas{
+    height: 700px;
+    background: url(../imagenes/concierto-2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    
+    &__tabla{
+        color: $blanco;
+        font-family: $font;
+        border: solid 2px orange;
+        width: 50%;
+        height: 400px;
+        font-size: 2rem;
+        text-align: center;  
+        margin-left: 25%;
+    }
+}

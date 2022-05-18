@@ -1,0 +1,35 @@
+.preguntas{
+    height: 750px;
+    background-image: url(../imagenes/concierto-3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    &__principal{
+        min-width: 600px;
+        color: $blanco;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        
+        & h2{
+            font-family: $font;
+        }
+        
+        & p{
+            font-size: 2rem;
+        }
+    }
+    
+    &__boton{
+        font-size: 3rem;
+        background-color: transparent;
+        color: $blanco;
+    }
+}
+
+
+

@@ -1,0 +1,43 @@
+.promociones{
+    background-color: rgba(25, 25, 25, 1);
+    padding: 2rem;
+    min-height: 500px;
+    
+    &__titulo{
+        font-family: $font;
+        color: $blanco;
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    
+    &__carta{
+        max-width: 18rem;
+        min-height: 460px;
+        background-color: rgba(38, 36, 36, 0.9);
+        padding: 0.5rem;
+        color: $blanco;
+        text-align: justify;
+        
+        &--animacion{
+            max-width: 18rem;
+            min-height: 460px;
+            
+            &:hover{
+                background-color: rgba(74, 70, 70, 0.9);
+                transform: scale(1.1); 
+                border-radius: 15px;
+                transition: all 2s;
+            }
+        }
+    }
+    
+    &__imagenes{
+        height: 15rem;
+    }
+}
+
+.carta__titulo{
+    font-family: $font;
+    text-align: center;
+}

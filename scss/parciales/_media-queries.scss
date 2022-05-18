@@ -1,0 +1,299 @@
+/*Media Query - Tablet*/
+@media screen and (max-width: 1023px)
+{
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &__items{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .boton__menu{
+        text-align: end;
+    }
+
+    .main{
+        height: 700px;
+        
+        &__texto{
+            padding-top: 200px;
+            
+            &--titulo{
+                font-size: 5rem;
+            }
+            
+            &--subtitulo{
+                font-size: 2.5rem;
+            }
+        }
+        
+    }
+    
+    .promociones__titulo{
+        font-size: 2rem;
+    }
+
+    .promociones__carta{
+        min-height: 500px;
+    }
+
+    .carta__titulo{
+        font-size: 1.5rem;
+    }
+
+    .carta__parrafo{
+        font-size: 15px;
+    }
+
+    .socios__flex{
+        padding: 0 1rem 0;
+    }
+
+    .socios__titulo{
+        font-size: 2rem;
+    }
+
+    .socios__items{
+        width: 300px;
+        height: 100px;
+        padding: 1rem;
+    }
+
+    .socios__flecha{
+        top: unset;
+        bottom: 0;
+        transform: translateX(-25%);
+    }
+
+    .socios__imagen{
+        height: 80px;
+        width: 200px;
+    }
+
+    .galeria__imagen{
+        height: 200px;
+        width: 250px;
+        margin: 1rem auto;
+    }
+
+    .galeria__descripcion{
+        margin: 1rem;
+    }
+
+    .galeria__descripcion--titulo{
+        font-size: 1.5rem;
+    }
+
+    .galeria__descripcion--subtitulo{
+        font-size: 1rem;
+    }
+
+    .fechas__tabla{
+        font-size: 1.5rem;
+        min-width: 75%;
+        margin: 0 auto;
+    }
+
+    .compra__titulo{
+        font-size: 3rem;
+    }
+    
+    .compra__lista{
+        max-width: 80%;
+        padding: 0.7rem;
+    }
+    
+    .compra__item{
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    .preguntas{
+        height: 650px;
+    }
+
+    .contacto{
+        height: auto;
+        
+        &__form{
+            margin: 1rem;
+        }
+        
+        &__mapa{
+            margin: 1rem;
+            padding: 2rem;
+            height: auto;
+            
+            &--titulo{
+                font-size: 2rem;
+            }
+        
+            &--iframe{
+                height: 350px;
+            }
+        }
+    
+    }
+
+    .footer__descripcion--texto{
+        display: none;
+    }
+
+    .footer__enlaces--links{
+        margin-right: 3rem;
+    }
+}
+
+/*Media Query - Mobile*/
+@media screen and (max-width: 600px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &__lista{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 4rem;
+        }
+    
+        &__logo--imagen{
+            height: 60px;
+            width: 60px;
+        }
+    
+        &__items{
+            font-size: 1.5rem;
+        }
+    }
+    
+
+    .main{
+        height: 600px;
+        
+        &__texto{
+            padding-top: 150px;
+            
+            &--titulo{
+                font-size: 4rem;
+            }
+        
+            &--subtitulo{
+                font-size: 2rem;
+            }
+        }
+    
+    }
+
+    .promociones__carta{
+        margin-bottom: 1rem;
+        /* height: 10px; */
+    }
+
+    .titulos{
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .galeria__concierto{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        text-align: center;
+    }
+
+    .galeria__descripcion{
+        margin: 1rem;
+    }
+
+    .fechas{
+        height: 600px;
+        
+        &__tabla{
+            font-size: 1rem;
+        }
+    }
+
+    .compra{
+        height: 600px;
+        
+        &__titulo{
+              font-size: 1.5rem;  
+        }
+        
+        &__lista{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__item{
+            border-left: 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    .preguntas__principal h2{
+        font-size: 1.5rem;
+    }
+    
+    .preguntas__principal p{
+        font-size: 1.2rem;
+    }
+
+    .preguntas__principal{
+        min-width: 50%;
+    }
+
+    .preguntas__boton{
+        font-size: 2.5rem;
+    }
+
+    .contacto__form{
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contacto__mapa{
+        max-width: 75%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .contacto__mapa--titulo{
+        font-size: 1.5rem;
+    }
+
+    .contacto__mapa--iframe{
+        height: 300px;
+    }
+
+    .contacto__input{
+        width: 100%;
+    }
+
+    .contacto__boton{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .footer__descripcion--logo{
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer__imagenes{
+        height: 30px;
+    }
+
+    .footer__enlaces--links{
+        margin-right: 1rem;
+    }
+
+    .footer__derechos{
+        min-width: 100%;
+    }
+}
