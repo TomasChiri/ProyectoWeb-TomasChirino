@@ -4,24 +4,22 @@
     position: relative;
     
     &__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include generarFlex(row, space-between);
     }
     
     &__descripcion{
         display: flex;
-       margin: 1rem;
+       margin: map-get($estilosGenerales, rem);
        
        &--logo{
            height: 60px;
            width: 60px;
-           margin-right: 1rem;
+           margin-right: map-get($estilosGenerales, rem);
        }
        
        &--texto{    
            text-align: justify;
-           width: 25rem;
+           width: map-get($estilosGenerales, rem) * 25;
        }
     }
     
@@ -30,23 +28,21 @@
     }
     
     &__enlaces{
-        display: flex;
-        flex-direction: row;
+        @include generarFlex(row, flex-end);
         flex-flow: wrap;
-        justify-content: flex-end;
         
         &--links{
-            margin-right: 5rem;
+            margin-right: map-get($estilosGenerales, rem) * 5;
         }
     }
     
     &__imagenes{
         height: 50px;
-        margin-top: 1rem;
+        margin-top: map-get($estilosGenerales, rem);
     }
     
     &__derechos{
-        text-align: center;
+        text-align: map-get($estilosGenerales, centro);
         position: absolute;
         bottom: 0;
         left: 50%;

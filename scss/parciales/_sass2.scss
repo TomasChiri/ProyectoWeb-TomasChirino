@@ -1,0 +1,13 @@
+//map de estilos generales
+$estilosGenerales:(
+    rem: 1rem,
+    centro: center,
+    fondoNegro: rgba(0, 0, 0, 0.8)
+);
+
+//mixin para generar flex
+@mixin generarFlex($direction, $eje-principal){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $eje-principal;
+}

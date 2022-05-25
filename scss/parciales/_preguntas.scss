@@ -1,16 +1,15 @@
 .preguntas{
     height: 750px;
-    background-image: url(../imagenes/concierto-3.jpg);
-    background-size: 100% 100%;
+    background-image: url(../imagenes/fondo-preguntas.svg);
+    background-size: cover;
     background-repeat: no-repeat;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include generarFlex(column, space-evenly);
     align-items: center;
     
     &__principal{
-        min-width: 600px;
+        min-width: 800px;
+        margin-bottom: 2rem;
         color: $blanco;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.7);
@@ -29,6 +28,11 @@
         background-color: transparent;
         color: $blanco;
     }
+}
+
+.accordion-button:not(.collapsed){
+    color: white;
+    background-color: transparent;
 }
 
 

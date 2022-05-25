@@ -1,26 +1,26 @@
 .promociones{
     background-color: rgba(25, 25, 25, 1);
-    padding: 2rem;
+    padding: map-get($estilosGenerales, centro) * 2;
     min-height: 500px;
     
     &__titulo{
         font-family: $font;
         color: $blanco;
-        text-align: center;
+        text-align: map-get($estilosGenerales, centro);
         font-size: 3rem;
         padding-bottom: 1rem;
     }
     
     &__carta{
-        max-width: 18rem;
+        max-width: map-get($estilosGenerales, rem) * 18;
         min-height: 460px;
         background-color: rgba(38, 36, 36, 0.9);
-        padding: 0.5rem;
+        padding: map-get($estilosGenerales, rem) / 2;
         color: $blanco;
         text-align: justify;
         
         &--animacion{
-            max-width: 18rem;
+            max-width: map-get($estilosGenerales, rem) * 18;
             min-height: 460px;
             
             &:hover{
@@ -33,11 +33,11 @@
     }
     
     &__imagenes{
-        height: 15rem;
+        height: map-get($estilosGenerales, rem) * 15;
     }
 }
 
 .carta__titulo{
     font-family: $font;
-    text-align: center;
+    text-align: map-get($estilosGenerales, centro);
 }
