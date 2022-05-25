@@ -435,8 +435,8 @@
 .footer__enlaces {
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
   justify-content: flex-end;
+  flex-flow: wrap;
 }
 
 .footer__enlaces--links {

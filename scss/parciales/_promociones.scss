@@ -1,6 +1,6 @@
 .promociones{
     background-color: rgba(25, 25, 25, 1);
-    padding: map-get($estilosGenerales, centro) * 2;
+    padding: map-get($estilosGenerales, rem) * 2;
     min-height: 500px;
     
     &__titulo{
