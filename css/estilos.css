@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .titulos {
   font-size: 4rem;
   font-family: "Bebas Neue", cursive;
@@ -249,7 +253,7 @@
 }
 
 .galeria__descripcion--subtitulo {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .fechas {
@@ -328,7 +332,7 @@
 }
 
 .preguntas__principal p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .preguntas__boton {
@@ -645,10 +649,10 @@
     font-size: 1.2rem;
   }
   .preguntas__principal h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .preguntas__principal p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .preguntas__principal {
     min-width: 50%;
