@@ -118,10 +118,27 @@
     }
 
     .preguntas{
-        height: 650px;
+        height: auto;
 
         &__principal{
             min-width: 500px;
+        }
+
+        &__news{
+            height: auto;
+            margin-bottom: 2rem;
+
+            &__imagen{
+                height: 200px;
+            }
+    
+            &__texto{
+                font-size: 1.4rem;
+            }
+    
+            &__boton{
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -259,6 +276,26 @@
 
     .preguntas__boton{
         font-size: 2.5rem;
+    }
+
+    .preguntas__news{
+        margin-top: 2rem;
+
+        &__imagen{
+            height: 150px;
+        }
+
+        &__texto{
+            font-size: 1.1rem;
+        }
+
+        &__input::placeholder{
+            font-size: 10px;
+        }
+
+        &__boton{
+            font-size: 1.2rem;
+        }
     }
 
     .contacto__form{
