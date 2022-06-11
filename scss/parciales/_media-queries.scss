@@ -79,22 +79,33 @@
         width: 200px;
     }
 
-    .galeria__imagen{
-        height: 200px;
-        width: 250px;
-        margin: 1rem auto;
+    .conciertos{    
+        &__imagen{
+            height: 500px;
+            // width: auto;
+        }
+    
+        &__titulo{
+            font-size: 4rem;
+        }
     }
 
-    .galeria__descripcion{
-        margin: 1rem;
-    }
-
-    .galeria__descripcion--titulo{
-        font-size: 1.5rem;
-    }
-
-    .galeria__descripcion--subtitulo{
-        font-size: 1rem;
+    .galeria{          
+        &__descripcion{
+            height: 250px;
+        }
+        
+        &__descripcion--titulo{
+            font-size: 2rem;
+        }
+        
+        &__descripcion--subtitulo{
+            font-size: 1.3rem;
+        }
+        
+        &__imagen{
+            height: 400px;
+        }
     }
 
     .fechas__tabla{
@@ -225,14 +236,25 @@
         padding: 1rem;
     }
 
-    .galeria__concierto{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        text-align: center;
+    .conciertos{    
+        &__imagen{
+            height: 350px;
+        }
+    
+        &__titulo{
+            font-size: 2.3rem;
+        }
     }
 
-    .galeria__descripcion{
-        margin: 1rem;
+    .galeria{          
+        &__descripcion{
+            margin-top: 2rem;
+        }
+
+        &__imagen{
+            height: 300px;
+        }
+
     }
 
     .fechas{

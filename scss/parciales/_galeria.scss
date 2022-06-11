@@ -1,44 +1,68 @@
-.galeria{
-    background-image: url(../imagenes/fondo-2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.conciertos{
+    background: url(../../imagenes/fondo-2.jpg);
+    
+    &__imagen{
+        height: 700px;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    &__titulo{
+        font-family: $font;
+        font-size: 5rem;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.carousel{
     padding: 1rem;
+}
+
+.galeria{
+    background-image: url(../../imagenes/fondo-preguntas.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+
+    &__titulo{
+        border-radius: 1rem;
+    }
     
     &__concierto{
         color: $blanco;
         padding: 1rem;
     
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
         /* align-items: center; */
     }
-    
-    &__imagen{
-        height: 300px;
-        width: 95%;
-        margin: 1rem;
-        border: 2px solid rgb(239, 64, 11);
-        border-radius: 12px;
-    }
-    
+     
     &__descripcion{
-        padding: 1rem;
+        padding:2rem;
         font-family: $font;
+        text-align: center;
         background-color: rgba(0, 0, 0, 0.7);
-        margin: 1rem;
+        height: 300px;
         border-radius: 10px;
-
+        margin-top: 1rem;
+        
         &--titulo{
-            font-size: 2rem;
+            font-size: 3rem;
         }
         
         &--subtitulo{
-            font-size: 1.3rem;
+            font-size: 1.8rem;
         }
     }
-}
 
+    &__imagen{
+        height: 500px;
+        border-radius: 20px;
+        margin: 2rem 0 2rem;
+        
+    }
+}
 
 
 
