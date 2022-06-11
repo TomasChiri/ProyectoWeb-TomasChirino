@@ -216,6 +216,11 @@ body {
   cursor: pointer;
 }
 
+.main__concierto {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .conciertos {
   background: url(../imagenes/fondo-2.jpg);
 }
